@@ -1,0 +1,34 @@
+body {
+    color:lawngreen;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+pre {
+    margin-bottom: 2%;
+}
+p, #center {
+    text-align: center;
+}
+
+.counter {
+    font-size: xx-large;
+    margin: 16% 20px 16% 20px;
+}
+
+.credit {
+    font-size: smaller;
+    margin-top: 2%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: lawngreen;
+    text-decoration: none;
+}
