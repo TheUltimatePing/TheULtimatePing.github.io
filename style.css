@@ -32,3 +32,27 @@ a {
     color: lawngreen;
     text-decoration: none;
 }
+
+.button {
+    background-color: black;
+    color: lawngreen;
+    border: 2px solid lawngreen;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: auto;
+    border-radius: 10%;
+}
+
+.button:active {
+    background-color: lawngreen;
+    color: black;
+}
+
+.used {
+    margin: 0 20px 0 20px;
+    font-size: larger;
+}
