@@ -3,117 +3,54 @@ document.addEventListener("DOMContentLoaded", function() {
   const message = document.getElementById("message");
   let coef = 1; // Coefficient initial
   let counterValue = 0;
+  let Textmessage = [
+    "got to 1M !",
+    "wow that was quick !",
+    "you're doing great !",
+    "it's a good start !",
+    "keep going !",
+    "you're getting there !",
+    "Sooner or later you'll get there.",
+    "That wasn't supposed to append, how did you get that ?",
+    "You're a god.",
+    "You don't know when to stop, do you ?",
+    "The name ''God'' is already taken.",
+    "If the name is already taken, then you must be the devil.",
+    "you are going to break the game.",
+    "Please stop.",
+    "You know what append to the last guy who did that ?",
+    "He is not here anymore to tell you.",
+    "Fire in the hole !",
+    "You are going to destroy the world.",
+    "You are going to destroy the universe.",
+    "You are going to destroy the multiverse.",
+    "You are going to destroy the omniverse.",
+    "You are going to destroy the metaverse.",
+    "You are going to destroy the megaverse.",
+    "You are going to destroy the gigaverse.",
+    "You are going to destroy the teraverse.",
+    "You are going to destroy the petaverse.",
+    "You are going to destroy the exaverse.",
+    "You are going to destroy the zettaverse.",
+    "You are going to destroy the yottaverse.",
+    "You are going to destroy the xennaverse.",
+    "There is no more verses to destroy.",
+    "You are going to destroy the universe again ?, wait how many times did you destroy it ?",
+    "That number could kill someone.",
+    "What if there were no end ...",
+    "What if it was all planned from the start ?",
+    "Did someone call the president ?",
+    "How did we get here",
+    "it's so big i can't see the end of it",
+    "hell is comming"
+  ]
 
   if (counter) {
       function increment() {
-          counter.innerHTML = Number(counter.innerHTML) + (1 * coef);
-          counterValue = getCounterValue();
-
-          if (counterValue > 1000 && counterValue < 100000) {
-            message.innerText = "You're doing great !"
-          }
-          else if (counterValue > 100000 && counterValue < 1000000) {
-            message.innerText = "Sooner or later you'll get there."
-          }
-          else if (counterValue > 1000000 && counterValue < 10000000) {
-            message.innerText = "how did you get that ?"
-          }
-          else if (counterValue > 10000000 && counterValue < 100000000) {
-              message.innerText = "You're a god."
-          }
-          else if (counterValue > 100000000 && counterValue < 1000000000) {
-              message.innerText = "You don't know when to stop, do you ?"
-          }
-          else if (counterValue > 1000000000 && counterValue < 10000000000) {
-              message.innerText = "The name ''God'' is already taken."
-          }
-          else if (counterValue > 10000000000 && counterValue < 100000000000) {
-            message.innerText = "If the name is already taken, then you must be the devil." 
-          }
-
-          else if (counterValue > 100000000000 && counterValue < 1000000000000) {
-            message.innerText = "you are going to break the game."
-          }
-
-          else if (counterValue > 1000000000000 && counterValue < 10000000000000) {
-            message.innerText = "Please stop."
-          }
-
-          else if (counterValue > 10000000000000 && counterValue < 100000000000000) {
-            message.innerText = "You know what append to the last guy who did that ?"
-          }
-
-          else if (counterValue > 100000000000000 && counterValue < 1000000000000000) {
-            message.innerText = "He is not here anymore to tell you."
-          }
-
-          else if (counterValue > 1000000000000000 && counterValue < 10000000000000000) {
-            message.innerText = "Fire in the hole !"
-          }
-
-          else if (counterValue > 10000000000000000 && counterValue < 100000000000000000) {
-            message.innerText = "You are going to destroy the world."
-          }
-
-          else if (counterValue > 100000000000000000 && counterValue < 1000000000000000000) {
-            message.innerText = "You are going to destroy the universe."
-          }
-    
-            else if (counterValue > 1000000000000000000 && counterValue < 10000000000000000000) {
-            message.innerText = "You are going to destroy the multiverse."
-            }
-    
-            else if (counterValue > 10000000000000000000 && counterValue < 100000000000000000000) {
-                message.innerText = "You are going to destroy the omniverse."
-            }
-    
-            else if (counterValue > 100000000000000000000 && counterValue < 1000000000000000000000) {
-                message.innerText = "You are going to destroy the metaverse."
-            }
-    
-            else if (counterValue > 1000000000000000000000 && counterValue < 10000000000000000000000) {
-                message.innerText = "You are going to destroy the megaverse."
-            }
-    
-            else if (counterValue > 10000000000000000000000 && counterValue < 100000000000000000000000) {
-                message.innerText = "You are going to destroy the gigaverse."
-            }
-                
-            else if (counterValue > 100000000000000000000000 && counterValue < 1000000000000000000000000) {
-                message.innerText = "You are going to destroy the teraverse."
-            }
-
-            else if (counterValue > 1000000000000000000000000 && counterValue < 10000000000000000000000000) {
-                message.innerText = "You are going to destroy the petaverse."
-            }
-
-            else if (counterValue > 10000000000000000000000000 && counterValue < 100000000000000000000000000) {
-                message.innerText = "You are going to destroy the exaverse."
-            }
-
-            else if (counterValue > 100000000000000000000000000 && counterValue < 1000000000000000000000000000) {
-                message.innerText = "You are going to destroy the zettaverse."
-            }
-
-            else if (counterValue > 1000000000000000000000000000 && counterValue < 10000000000000000000000000000) {
-                message.innerText = "You are going to destroy the yottaverse."
-            }
-
-            else if (counterValue > 10000000000000000000000000000 && counterValue < 100000000000000000000000000000) {
-                message.innerText = "You are going to destroy the xennaverse."
-            }
-
-            else if (counterValue > 100000000000000000000000000000 && counterValue < 1000000000000000000000000000000) {
-                message.innerText = "There is no more verses to destroy."
-            }
-
-            else if (counterValue > 1000000000000000000000000000000 && counterValue < 10000000000000000000000000000000) {
-                message.innerText = "You are going to destroy the universe again ?, wait how many times did you destroy it ?"
-            }
-
-            else if (counterValue > 10000000000000000000000000000000 && counterValue < 100000000000000000000000000000000) {
-                message.innerText = "That number could kill someone."
-            }
+        counter.innerHTML = Number(counter.innerHTML) + (1 * coef);
+        counterValue = getCounterValue();
+        
+        message.innerText = Textmessage[String(counterValue).length];
         }
 
       window.getCounterValue = function() {
