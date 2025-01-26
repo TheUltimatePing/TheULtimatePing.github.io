@@ -1,7 +1,7 @@
 body {
     color:lawngreen;
     background-color: black;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 pre {
@@ -13,7 +13,7 @@ p, #center {
 
 .counter {
     font-size: xx-large;
-    margin: 16% 20px 16% 20px;
+    margin: 15% 20px 15% 20px;
 }
 
 .credit {
@@ -52,7 +52,11 @@ a {
     color: black;
 }
 
-.used {
+.timeUsed {
     margin: 0 20px 0 20px;
     font-size: larger;
+}
+
+#message {
+    height: 20%;
 }
