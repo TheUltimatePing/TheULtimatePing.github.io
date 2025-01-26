@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
     "Go to 1M!",
     "Wow, that was quick!",
     "You're doing great!",
-    "It's a good start!",
     "Keep going!",
     "You're getting there!",
     "Sooner or later you'll get there.",
