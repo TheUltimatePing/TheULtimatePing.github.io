@@ -60,13 +60,18 @@ document.addEventListener("DOMContentLoaded", function() {
     "Devil - He will."
   ];
 
-  // Update counter display and message
+  // Mise à jour du compteur et du message basé sur les puissances de 10
   function updateCounter() {
     counter.innerHTML = counterValue;
-    message.innerText = Textmessage[String(counterValue).length] || Textmessage[Textmessage.length - 1];
+    let powerOfTen = Math.floor(Math.log10(counterValue));
+    
+    // Si le compteur atteint une nouvelle puissance de 10, afficher le message correspondant
+    if (powerOfTen >= 0 && powerOfTen < Textmessage.length) {
+      message.innerText = Textmessage[powerOfTen];
+    }
   }
 
-  // Increment counter every second
+  // Incrémenter le compteur chaque seconde
   function increment() {
     counterValue += coef;
     timeUsed++;
@@ -74,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function() {
     timerDisplay.innerText = timeUsed;
   }
 
-  // Start or stop the counter
+  // Démarrer ou arrêter le compteur
   function toggleCounter() {
     if (isPaused) {
       interval = setInterval(increment, 1000);
@@ -87,9 +92,9 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   }
 
-  // Reset the counter
+  // Réinitialiser le compteur
   function resetCounter() {
-    clearInterval(interval); // Clear any ongoing intervals
+    clearInterval(interval); // Annuler tous les intervalles en cours
     counterValue = 0;
     timeUsed = 0;
     coef = 1;
@@ -97,21 +102,21 @@ document.addEventListener("DOMContentLoaded", function() {
     timerDisplay.innerText = timeUsed;
     document.getElementById('pauseResume').innerText = "Pause";
     isPaused = false;
-    interval = setInterval(increment, 1000); // Restart counter after reset
+    interval = setInterval(increment, 1000); // Redémarrer le compteur après la réinitialisation
   }
 
-  // Change the coefficient
+  // Modifier le coefficient
   function changeCoef(newCoef) {
     coef *= newCoef;
     console.log('Coefficient changed to: ', coef);
   }
 
-  // Event Listeners
+  // Écouteurs d'événements
   document.getElementById("increaseCoef").addEventListener("click", () => changeCoef(2));
   document.getElementById("decrease").addEventListener("click", () => changeCoef(-1));
   document.getElementById("reset").addEventListener("click", resetCounter);
   document.getElementById("pauseResume").addEventListener("click", toggleCounter);
 
-  // Initial setup
+  // Initialisation
   resetCounter();
 });
