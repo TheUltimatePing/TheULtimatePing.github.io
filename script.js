@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
       window.getCounterValue = function() {
         let counterValue = Number(counter.innerHTML);
-        console.log('Current counter value: ', counterValue);
         return counterValue;
         }
 
