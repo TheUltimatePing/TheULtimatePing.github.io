@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   let coef = 1; // Coefficient initial
   let counterValue = 0;
   let Textmessage = [
-    "got to 1M !",
+    "go to 1M !",
     "wow that was quick !",
     "you're doing great !",
     "it's a good start !",
@@ -42,7 +42,17 @@ document.addEventListener("DOMContentLoaded", function() {
     "Did someone call the president ?",
     "How did we get here",
     "it's so big i can't see the end of it",
-    "hell is comming"
+    "hell is comming",
+    "Who do you think you are ?",
+    "Yes, i'm talking to you behind the screen",
+    "TheUltimatePing ...",
+    "The creator ...",
+    "Of my world, the world of big numbers",
+    "Bro broke everything",
+    "God as well as the devil are in contemplation of your efforts",
+    "They laugh...",
+    "God - This pathetic mortal is trying to egual us",
+    "Devil - He will."
   ]
 
   if (counter) {
