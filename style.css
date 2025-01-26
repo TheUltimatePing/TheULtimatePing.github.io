@@ -1,0 +1,62 @@
+body {
+    color:lawngreen;
+    background-color: black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+pre {
+    margin-bottom: 2%;
+}
+p, #center {
+    text-align: center;
+}
+
+.counter {
+    font-size: xx-large;
+    margin: 15% 20px 15% 20px;
+}
+
+.credit {
+    font-size: smaller;
+    margin-top: 2%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: lawngreen;
+    text-decoration: none;
+}
+
+.button {
+    background-color: black;
+    color: lawngreen;
+    border: 2px solid lawngreen;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: auto;
+    border-radius: 10%;
+}
+
+.button:active {
+    background-color: lawngreen;
+    color: black;
+}
+
+.timeUsed {
+    margin: 0 20px 0 20px;
+    font-size: larger;
+}
+
+#message {
+    height: 20%;
+}
